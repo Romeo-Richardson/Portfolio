@@ -23,6 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 #gallery {
@@ -45,4 +46,54 @@ body {
 
 #gallery-scroll-right {
     right: 0px;
+}
+
+#about-me-top {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-header {
+    position: absolute;
+    font-size: 48px;
+    top: 50px;
+}
+
+#about-me-subheader {
+    position: absolute;
+    top: 100px;
+}
+
+#about-me-text {
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    font-size: 24px;
+    top: 200px;
+}
+
+#about-me-bottom {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    background-color: palevioletred;
+    top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    z-index: 1;
+}
+
+#about-me-bottom-text {
+    font-size: 60px;
+}
+
+#about-me-bottom:hover {
+    cursor: pointer;
 }
