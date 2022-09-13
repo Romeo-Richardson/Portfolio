@@ -12,7 +12,7 @@ body {
     width: 100%;
     position: absolute;
     top: 0px;
-    z-index: 12;
+    z-index: 13;
 }
 
 #gallery-container {
@@ -23,17 +23,78 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 11;
+    z-index: 12;
     top: 50px;
 }
 
-#gallery {
-    border: 1px solid black;
-    background-color: white;
-    height: 400px;
-    width: 60%;
+#gallery-cover {
+    height: 450px;
+    width: 100%;
+    background-color: purple;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 13;
+    top: 50px;
+    transition: 1s;
 }
+
+#gallery-cover-text {
+    font-size: 60px;
+}
+
+#gallery-top {
+    height: 225px;
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 13;
+    top: 0px;
+    transition: 1s;
+}
+
+#gallery-bottom {
+    height: 225px;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 13;
+    bottom: 0px;
+    transition: 1s;
+}
+
+.gallery-grid {
+    height: 100%;
+    width: 33.3%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallery-image:hover {
+    cursor: pointer;
+}
+
+#gallery-cover:hover {
+    cursor: pointer;
+}
+
 
 .scroll {
     height: 100%;
@@ -46,8 +107,15 @@ body {
     left: 0px;
 }
 
+#gallery-scroll-left:hover {
+    cursor: pointer;
+}
+
 #gallery-scroll-right {
     right: 0px;
+}
+#gallery-scroll-right:hover {
+    cursor: pointer;
 }
 
 #about-me-top {

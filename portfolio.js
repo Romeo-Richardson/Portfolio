@@ -11,6 +11,11 @@ function skillsetAnimation(){
     setTimeout(dropDownChildAnimations, 2000);
 };
 
+function galleryAnimation(){
+    let gallery = document.getElementById('gallery-cover');
+    gallery.style.transform = 'translateX(100%)'
+};
+
 let dropDownElements = {
     htmlDropDown: document.getElementById('html-skill'),
     cssDropDown: document.getElementById('css'),
@@ -23,7 +28,7 @@ let dropDownChildren = {
     cssChild: document.getElementById('css-logo'),
     jsChild: document.getElementById('js-logo'),
     reactChild: document.getElementById('react-logo')
-}
+};
 
 function dropDownAnimations(){
     for(let [key, value] of Object.entries(dropDownElements)){
@@ -35,4 +40,7 @@ function dropDownChildAnimations(){
     for(let [key,value] of Object.entries(dropDownChildren)){
         value.style.transform = 'translateY(-120px)'
     }
-}
+};
+
+let defaultTrans = 0;
+
