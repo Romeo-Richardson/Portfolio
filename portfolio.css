@@ -73,10 +73,34 @@ body {
 .gallery-grid {
     height: 100%;
     width: 33.3%;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
+}
+
+#g1{
+    transform: scale(0);
+}
+
+#g2{
+    transform: scale(0);
+}
+
+#g3{
+    transform: scale(0);
+}
+
+#g4{
+    transform: scale(0);
+}
+
+#g5{
+    transform: scale(0);
+}
+
+#g6{
+    transform: scale(0);
 }
 
 .gallery-image {
@@ -85,37 +109,29 @@ body {
     background-color: white;
     position: relative;
     bottom: 15px;
+    transition: .5s;
+    box-shadow: 5px 5px 25px hsl(192, 3%, 31%);
+    overflow: hidden;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
 }
 
 .gallery-image:hover {
     cursor: pointer;
+    transform: scale(105%);
+    
 }
 
 #gallery-cover:hover {
     cursor: pointer;
 }
 
-
-.scroll {
-    height: 100%;
-    width: 15%;
-    background-color: rgb(104, 99, 99, .2);
+.gallery-title {
     position: absolute;
-}
-
-#gallery-scroll-left {
-    left: 0px;
-}
-
-#gallery-scroll-left:hover {
-    cursor: pointer;
-}
-
-#gallery-scroll-right {
-    right: 0px;
-}
-#gallery-scroll-right:hover {
-    cursor: pointer;
+    bottom: 5px;
 }
 
 #about-me-top {
