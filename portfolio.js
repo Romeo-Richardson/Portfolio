@@ -1,3 +1,14 @@
+function headerStyles(){
+    let projects = document.getElementById('gallery-cover-text');
+    projects.innerText = `<PROJECTS/>`;
+    let aboutMe = document.getElementById('about-me-bottom-text');
+    aboutMe.innerText = `<ABOUT-ME/>`;
+    let skillsetHeader = document.getElementById('skillset-text');
+    skillsetHeader.innerText = `<SKILL-SET/>`;
+};
+
+headerStyles();
+
 function aboutMeAnimation(){
     let aboutMe = document.getElementById('about-me-bottom');
     aboutMe.style.transform = 'translateY(-450px)';
@@ -9,12 +20,19 @@ function skillsetAnimation(){
     skillset.style.transform = 'translateY(-450px)';
     dropDownAnimations();
     setTimeout(dropDownChildAnimations, 2000);
+    setTimeout(dropdownText, 2500);
 };
 
 function galleryAnimation(){
     let gallery = document.getElementById('gallery-cover');
     gallery.style.transform = 'translateX(100%)';
+    setTimeout(layer, 1000);
     gridAnimationsMain();
+};
+
+function layer(){
+    let galleryLayer = document.getElementById('gallery-layer');
+    galleryLayer.style.transform = 'scale(0)';
 };
 
 let dropDownElements = {
@@ -71,6 +89,14 @@ function dropDownChildAnimations(){
     for(let [key,value] of Object.entries(dropDownChildren)){
         value.style.transform = 'translateY(-120px)'
     }
+};
+
+function dropdownText(){
+    let text = document.querySelectorAll('.dropdown-text');
+    text.forEach((element)=>{
+        element.style.transform = 'scale(1)';
+    })
+    
 };
 
 
