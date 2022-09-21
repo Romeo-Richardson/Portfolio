@@ -99,4 +99,24 @@ function dropdownText(){
     
 };
 
+function g1Link(){
+    location.href = '/Tip-Calculator/calc.html'
+};
+
+function g2Link(){
+    location.href = '/Sign Up/index.html'
+};
+
+function g3Link(){
+    location.href = '/Expense-Tracker/expense.html'
+};
+
+function g4Link(){
+    location.href = '/Product Preview Card/index.html'
+};
+
+function g5Link(){
+    location.href = '/Survey-Example/Survey.html'
+};
+
 
