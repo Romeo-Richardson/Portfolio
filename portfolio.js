@@ -99,6 +99,16 @@ function dropdownText(){
     
 };
 
+function welcomeAnimation(){
+    let welcome = document.querySelectorAll('.welcome');
+    let counter = 1;
+    welcome.forEach((letter)=>{
+        letter.style.transition = `${counter}s`;
+        letter.style.transform = 'translateY(30px)';
+        counter += .05;
+    });
+};
+
 function g1Link(){
     location.href = '/Tip-Calculator/calc.html'
 };
@@ -112,11 +122,11 @@ function g3Link(){
 };
 
 function g4Link(){
-    location.href = '/Product Preview Card/index.html'
+    location.href = '/Product Preview Card/product-preview-card.html'
 };
 
 function g5Link(){
     location.href = '/Survey-Example/Survey.html'
 };
 
-
+welcomeAnimation();

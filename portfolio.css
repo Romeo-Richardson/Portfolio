@@ -1,3 +1,7 @@
+div {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,12 +11,48 @@ body {
 }
 
 #nav-bar {
-    background-color: navy;
+    background-color: black;
     height: 50px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    overflow: hidden;
+}
+.nav-button {
+    background-color: black;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: rgb(39, 39, 39);
+    transition: 1s;
+}
+
+#resume {
+    position: absolute;
+    right: 0px;
+}
+
+#contact {
+    position: absolute;
+    right: 125px;
+}
+
+.welcome {
+    position: relative;
+    top: -30px;
+    color: white;
 }
 
 #gallery-container {
@@ -30,13 +70,14 @@ body {
 #gallery-cover {
     height: 450px;
     width: 100%;
-    background-color: purple;
+    background-color: black;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 13;
     transition: 1s;
+    color: white;
 }
 
 #gallery-layer{
@@ -58,7 +99,7 @@ body {
 #gallery-top {
     height: 225px;
     width: 100%;
-    background-color: green;
+    background-color: rgb(219, 219, 219);
     position: absolute;
     display: flex;
     justify-content: center;
@@ -71,7 +112,7 @@ body {
 #gallery-bottom {
     height: 225px;
     width: 100%;
-    background-color: orange;
+    background-color: rgb(219, 219, 219);
     position: absolute;
     display: flex;
     justify-content: center;
@@ -143,6 +184,7 @@ body {
 .gallery-title {
     position: absolute;
     bottom: 5px;
+    color: black;
 }
 
 #about-me-top {
@@ -154,7 +196,9 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9;
-    background-color: brown;
+    background-color: black;
+    color: white;
+    overflow: hidden;
 }
 
 #about-me-header {
@@ -180,13 +224,14 @@ body {
     width: 100%;
     height: 450px;
     position: absolute;
-    background-color: palevioletred;
+    background-color: white;
     top: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 1s;
     z-index: 10;
+    color: black;
 }
 
 #about-me-bottom-text {
@@ -201,13 +246,14 @@ body {
     width: 100%;
     height: 450px;
     position: absolute;
-    background-color: yellow;
+    background-color: black;
     top: 950px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 8;
     transition: 1s;
+    color: white;
 }
 
 #skillset:hover {
@@ -230,28 +276,28 @@ body {
 }
 
 #html-skill {
-    background-color: red;
+    background-color: rgb(219, 219, 219);
     left: 0px;
     transition: 1s;
     position: absolute;
 }
 
 #css {
-    background-color: purple;
+    background-color: rgb(219, 219, 219);
     left: 25%;
     transition: 1.33s;
     position: absolute;
 }
 
 #js {
-    background-color: blue;
+    background-color: rgb(219, 219, 219);
     right: 25%;
     transition: 1.66s;
     position: absolute;
 }
 
 #react {
-    background-color: green;
+    background-color: rgb(219, 219, 219);
     right: 0px;
     transition: 2s;
     position: absolute;
@@ -261,7 +307,7 @@ body {
     width: 100%;
     height: 450px;
     position: absolute;
-    background-color: darkslateblue;
+    background-color: white;
     top: 950px;
     z-index: 6;
 }
