@@ -110,23 +110,27 @@ function welcomeAnimation(){
 };
 
 function g1Link(){
-    location.href = '/Tip-Calculator/calc.html'
+    location.href = '/public/Tip-Calculator/calc.html'
 };
 
 function g2Link(){
-    location.href = '/Sign Up/index.html'
+    location.href = '/public/Sign Up/signup.html'
 };
 
 function g3Link(){
-    location.href = '/Expense-Tracker/expense.html'
+    location.href = '/public/Expense-Tracker/expense.html'
 };
 
 function g4Link(){
-    location.href = '/Product Preview Card/product-preview-card.html'
+    location.href = '/public/Product Preview Card/product-preview-card.html'
 };
 
 function g5Link(){
-    location.href = '/Survey-Example/Survey.html'
+    location.href = '/public/Survey-Example/Survey.html'
+};
+
+function openResume(){
+    location.href = 'https://docs.google.com/document/d/1LId_bj_4E3uJ3Rz2Z_6a_pWjXhU_lgsI/edit?usp=sharing&ouid=111835233067693231251&rtpof=true&sd=true'
 };
 
 welcomeAnimation();
