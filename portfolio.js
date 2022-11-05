@@ -129,8 +129,12 @@ function g5Link(){
     location.href = '/public/Survey-Example/Survey.html'
 };
 
+function g6Link(){
+    location.href = '/API-Example/giphy.html'
+};
+
 function openResume(){
-    location.href = 'https://docs.google.com/document/d/1LId_bj_4E3uJ3Rz2Z_6a_pWjXhU_lgsI/edit?usp=sharing&ouid=111835233067693231251&rtpof=true&sd=true'
+    location.href = 'https://1drv.ms/w/s!AteB6oDGc_2mgZoOjqqeqWwGbYNTKQ?e=7LbyB1'
 };
 
 welcomeAnimation();
